@@ -80,9 +80,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // Normal Scrolling
 
 
-    /* setInterval(function() {
+    setInterval(function() {
         window.scrollBy(0, 1); 
-    }, 10);  */
+    }, 10); 
  
 
 //Scroll Up and Down
