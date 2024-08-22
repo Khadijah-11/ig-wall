@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Wall</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+
+</head>
+<body>
+    <div id="scroll-container">
+    <header class="fixed-header">
+        <div class="header-content">
+            <img src="images/logo.png" alt="Logo" class="logo"> 
+            <div class="title">Welcome to Our Page!</div>
+        </div>
+    </header>
+    
+    
+    <div class="instagram-wall">
+        <!-- Grid for Instagram posts -->
+        <div id="post-grid" class="post-grid">
+            <!-- Post Boxes will be dynamically inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <div id="video-overlay" class="video-overlay">
+        <video id="brand-video" muted>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer class="fixed-footer">
+        <div class="footer-content">
+            <img src="brand1-logo.png" alt="Brand 1" class="brand-logo">
+            <img src="brand2-logo.png" alt="Brand 2" class="brand-logo">
+            <img src="brand3-logo.png" alt="Brand 3" class="brand-logo">
+            <!-- Add more brand logos as needed -->
+        </div>
+    </footer>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
