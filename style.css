@@ -3,6 +3,11 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+/* Freeze scrolling */
+body.freeze-scroll {
+    overflow: hidden;
+}
+
 
 .fixed-header {
     position: fixed;
@@ -137,7 +142,17 @@ body {
     object-fit: contain;
     margin: 0 10px; /* Add left and right margins */
 }
+.privacy-policy-link {
+    font-size: 12px;
+    color: #fff; /* White text */
+    text-decoration: none;
+    margin-left: auto; /* Pushes the link to the right */
+    padding-right: 20px; /* Adds some padding on the right */
+}
 
+.privacy-policy-link:hover {
+    text-decoration: underline;
+}
 
 
 @media (max-width: 1400px) {

@@ -80,9 +80,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // Normal Scrolling
 
 
-    setInterval(function() {
+    /* setInterval(function() {
         window.scrollBy(0, 1); 
-    }, 10); 
+    }, 10);  */
  
 
 //Scroll Up and Down
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //Infinite Scrolling
 
 
-/*     const scrollContainer = document.getElementById('scroll-container');
+    /* const scrollContainer = document.getElementById('scroll-container');
 
     // Create a clone of the content to scroll infinitely
     const clone = scrollContainer.cloneNode(true);
@@ -117,9 +117,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (window.scrollY >= scrollContainer.scrollHeight) {
             window.scrollTo(0, 0); // Go back to the top of the page
         }
-    }, 10); // Adjust speed here (lower value = faster scroll)
+    }, 10); // Adjust speed here (lower value = faster scroll) */
 
- */
+
 // Function to show the video overlay
 /* const videoOverlay = document.getElementById('video-overlay');
 const brandVideo = document.getElementById('brand-video');
@@ -151,6 +151,74 @@ const brandVideo = document.getElementById('brand-video');
 
     // When the video ends, hide video and show posts again
     brandVideo.addEventListener('ended', hideVideo); */
+
+    /* const videoOverlay = document.getElementById('video-overlay');
+    const brandVideo = document.getElementById('brand-video');
+
+    const scrollContainer = document.getElementById('scroll-container');
+
+    let scrollInterval;
+    let isScrolling = true; // Flag to control scrolling
+    let videoDuration = 10000; // Video display duration (in milliseconds)
+    let postDisplayDuration = 5000; // Post grid display duration before showing video (in milliseconds)
+
+    // Infinite Scrolling
+    function startScrolling() {
+        scrollInterval = setInterval(function() {
+            if (isScrolling) {
+                window.scrollBy(0, 1); // Scroll down 1px every interval
+
+                // Check if we've reached the end of the content
+                if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+                    window.scrollTo(0, 0); // Loop back to the top
+                }
+            }
+        }, 10); // Adjust speed here (lower value = faster scroll)
+    }
+
+    function stopScrolling() {
+        isScrolling = false; // Pause scrolling
+    }
+
+    function resumeScrolling() {
+        isScrolling = true; // Resume scrolling
+    }
+
+    function showVideo() {
+        stopScrolling(); // Stop scrolling when the video starts
+        videoOverlay.style.display = 'flex'; // Show the video overlay
+        brandVideo.play(); // Start playing the video
+
+        // Hide the video after its duration
+        setTimeout(hideVideo, videoDuration);
+    }
+
+    function hideVideo() {
+        videoOverlay.style.display = 'none'; // Hide the video overlay
+        postGrid.style.display = 'grid'; // Ensure the post grid is visible again
+
+        resumeScrolling(); // Resume scrolling after hiding the video
+
+        // Repeat the video display cycle
+        setTimeout(showVideo, postDisplayDuration);
+    }
+
+    // Initial setup: hide post grid and show video after a delay
+    setTimeout(() => {
+        postGrid.style.display = 'none'; // Hide the post grid
+        showVideo(); // Show the video
+    }, postDisplayDuration);
+
+    // When the video ends, hide video and show posts again
+    brandVideo.addEventListener('ended', hideVideo);
+
+    // Start the infinite scrolling
+    startScrolling(); */
+
+    
+
+
+ 
 
 
 });
