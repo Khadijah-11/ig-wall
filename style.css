@@ -11,8 +11,8 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #003545;
-    color: #fff;
+    background-color: #fff;
+    color: #D13624;
     padding: 10px 0; /* Reduced padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -30,11 +30,12 @@ body, html {
 .logo {
     margin-right: auto;
     margin-left: 20px;
-    max-height: 50px; /* Reduced logo size */
+    max-height: 90px; /* Reduced logo size */
 }
 
 .title {
-    font-size: 20px; /* Reduced title size */
+    font-size: 40px; /* Reduced title size */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     width: 100%;
     padding-right: 40px; /* Adjusted padding */
@@ -80,8 +81,8 @@ body, html {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #003545;
-    padding: 5px 0; /* Reduced padding */
+    background-color: #fff;
+    padding: 10px 0; /* Adjust padding to suit the new image */
     z-index: 1000;
 }
 
@@ -89,16 +90,17 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
-.brand-logo {
-    height: 40px; /* Reduced logo size */
+.brand-logos-image {
+    width: 100%; /* Ensure the image spans the footer width */
+    height: auto; /* Maintain aspect ratio */
     object-fit: contain;
-    margin: 0 10px;
 }
 
-.privacy-policy-link {
+
+
+/* .privacy-policy-link {
     font-size: 12px;
     color: #fff;
     text-decoration: none;
@@ -107,7 +109,7 @@ body, html {
 
 .privacy-policy-link:hover {
     text-decoration: underline;
-}
+} */
 
 
 
